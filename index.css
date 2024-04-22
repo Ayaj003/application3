@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+}
+
+.desktop-header {
+    display: none !important;
+}
+
+.navbar { 
+  background-color: #ffff;
+}
+
+.menu-icons img{
+  height: 25px;
+}
+
+.carousel-inner img{
+  height: 450px;
+  width: 300px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 250%; 
+  left: 37%;
+  background-color: rgba(0,0,0,0.3); 
+  border: 1px solid #ffff;
+}
+
+.catigories{
+  background-repeat: no-repeat;
+  height: 170px; 
+  width:100%;
+}
+
+.catigories button{
+  margin-top: 123px; 
+  font-size: x-small;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.card-container{
+display: flex;
+flex-wrap: nowrap;
+overflow-x: auto;
+gap: 10px;
+margin-left: 10px;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card{
+  height: 200px;
+  width: 150px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  flex: 0 0 auto;
+}
+
+.product-image:hover{
+  opacity: 0.8;
+}
+
+.shop-btn{
+  font-size: small;
+  background-color: rgba(0,0,0,0.3); 
+  border: 1px solid #ffff;
+}
+
+
+.shop-btn:hover , .catigories button:hover , .carousel-button:hover{
+  background-color: black;
+  opacity: 0.6;
+  border-color: #ffff;
+}
+
+.email-box{
+  background-color: #e6ffda;
+}
+
+.email-box h6{
+  line-height: 40px;
+  font-weight: 700;
+}
+
+input{
+  border-radius: 6px;
+  border: 1px solid gray;
+  height: 40px;
+}
+
+.fa {
+  font-size: 30px;
+  width: 30px;
+  text-decoration: none;
+  margin:0px 10px 20px ;
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.policies a{
+  color: #909294;
+}
+
+.policies a:hover{
+  color: #ffff;
+}
+
+.seasonal-favs{
+  margin-top: 345px;
+}
+
+.shoes-catigory{
+  background-image: url('src/shoe.jpg');
+}
+
+.accssesories-catigory{
+  background-image: url('./src/belt.jpg');
+}
+
+.discount-catigory{
+  height: 220px; 
+  background-image: url('./src/discount.webp'); 
+  background-size: 100% 100%;
+  line-height: 10px;
+}
+
+.footer{
+  font-size: small;
+  padding-top: 30px;
+}
+
+.google-play{
+  height: 50px; 
+  width:125px
+}
+
+.app-store{
+  height: 34px; 
+  width:110px ;
+}
+
+@media screen and (min-width: 768px){
+
+  .carousel-inner img{
+    height: 620px;
+  }
+  
+  .carousel-button{
+    top: 420%; 
+    left: 45%;
+    width: 200px;
+    height: 50px;
+    font-size: larger;
+  }
+
+  #carouselExampleCaptions {
+    position: relative;
+    z-index: 1; 
+  
+  }
+
+  .seasonal-favs{
+    margin-top: 530px;
+  }
+
+  .card{
+    height: 400px;
+    width: 300px;
+  }
+
+  .card-container{
+    gap:20px;
+    padding-left: 130px;
+    padding-top: 20px;
+    
+  }
+
+  .catigories{
+    height: 600px; 
+  }
+
+  .catigories img{
+    height:600px; 
+    
+  }
+  
+  .shoes-catigory button , .accssesories-catigory button{
+    margin-top: 500px; 
+    font-size:large;
+    width: 120px;
+  }
+
+  .shoes-catigory{
+    background-image: url('src/shoeD.jpg');
+  }
+
+  .accssesories-catigory{
+    background-image: url('src/sunglasses.jpg');
+  }
+
+  .accssesories-catigory button{
+    width: 180px;
+  }
+
+  .discount-catigory{
+    height:250px;
+  }
+
+  .shop-btn{
+    width: 80px;
+  }
+
+  .email-box h6{
+    font-size: x-large;
+    height: 100px;
+  }
+
+  
+
+  .footer{
+    display: flex;
+    align-content: center;
+    gap:70px;
+    padding-left: 330px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: small;
+  }
+
+  .footer hr{
+    display: none;
+  }
+
+  .policies{
+    margin-left: 70px;
+  }
+
+  .app-store{
+    height: 54px; 
+    width: 150px ;
+  }
+
+  .google-play{
+    height: 80px; 
+    width:170px
+  }
+
+}
